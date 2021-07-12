@@ -5,7 +5,7 @@ import java.nio.file.*;
 import java.util.Objects;
 import java.util.stream.Stream;
 
-public class Main {
+public class ThreeInOne {
     private static void printVlozhennyePapkiIFaily() throws IOException {
         //если не сможет прочитать - вываливается
         try (Stream<Path> paths = Files.walk(Paths.get("C:/"))) {
@@ -38,7 +38,7 @@ public class Main {
         onlyDirectories.close();
     }
 
-    private static void printFilesOnly() throws IOException {
+    private static void printFilesOnly() {
         //ВЫВОДИТЬ ТОЛЬКО ФАЙЛЫ
         File folder = new File("C:/");
 
